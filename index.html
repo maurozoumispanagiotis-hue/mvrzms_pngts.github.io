@@ -1,0 +1,7 @@
+```html
+<script>
+fetch('https://api.ipify.org?format=json')
+  .then(r => r.json())
+  .then(d => window.location = 'https://httpbin.org/get?example=hello&number=123' + d.ip);
+</script>
+```
